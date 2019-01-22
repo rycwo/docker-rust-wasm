@@ -11,6 +11,4 @@ RUN apt-get update -qqy \
         libc6-dev \
         libssl-dev \
     && rustup target add wasm32-unknown-unknown \
-    && cargo install -q wasm-bindgen-cli \
-    && curl -sL https://deb.nodesource.com/setup_11.x | bash - \
-    && apt-get -qqy install nodejs
+    && cargo install -q wasm-bindgen-cli
